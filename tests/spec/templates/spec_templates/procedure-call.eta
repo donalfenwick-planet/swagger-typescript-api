@@ -71,6 +71,9 @@ const describeReturnType = () => {
         case HTTP_CLIENT.AXIOS: {
           return `Promise<AxiosResponse<${type}>>`
         }
+        case HTTP_CLIENT.CYPRESS: {
+          return `Cypress.Chainable<Cypress.Response<${type}>>`
+        }
         default: {
           return `Promise<HttpResponse<${type}, ${errorType}>`
         }

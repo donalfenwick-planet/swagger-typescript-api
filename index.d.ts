@@ -1,6 +1,6 @@
 import {MonoSchemaParser} from "./src/schema-parser/mono-schema-parser";
 
-type HttpClientType = "axios" | "fetch";
+type HttpClientType = "axios" | "fetch" | "cypress";
 
 interface GenerateApiParamsBase {
   /**
@@ -569,7 +569,7 @@ export interface GenerateApiConfiguration {
     debug: boolean;
     anotherArrayType: boolean;
     extractRequestBody: boolean;
-    httpClientType: "axios" | "fetch";
+    httpClientType: "axios" | "fetch" | "cypress";
     addReadonly: boolean;
     extractResponseBody: boolean;
     extractResponseError: boolean;

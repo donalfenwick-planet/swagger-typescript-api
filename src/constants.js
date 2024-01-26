@@ -28,6 +28,7 @@ const SCHEMA_TYPES = {
 const HTTP_CLIENT = {
   FETCH: 'fetch',
   AXIOS: 'axios',
+  CYPRESS: 'cypress',
 };
 
 const PROJECT_VERSION = packageJson.version;
